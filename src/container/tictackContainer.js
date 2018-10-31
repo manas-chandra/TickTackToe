@@ -31,7 +31,7 @@ class TicTackContaner extends Component {
     return (
       <div>
         <div className={'reset'}>
-          <button className={'btn-reset'} onClick={() => this.props.resetBoard()}>Reset</button>
+          <button className={'btn-reset'} style={{marginRight: "5px"}} onClick={() => this.props.resetBoard()}>Reset</button>
         </div>
         <div className={'ticTacToe'}>
           {

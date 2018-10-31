@@ -10,7 +10,7 @@ class ModalDialog extends Component {
           <div className={"content"}>
             <div className={'winner'}>Winner of the game is <strong>Player {this.props.winner}</strong></div>
             <div className={'reset'}>
-              <button className={'btn-reset'} style={{marginRight: "5px"}} onClick={() => this.props.resetBoard()}>Reset</button>
+              <button className={'btn-reset'} onClick={() => this.props.resetBoard()}>Reset</button>
             </div>
           </div>
         </div>
