@@ -1,0 +1,2 @@
+export const ACTION_PERFORMED = "ACTION_PERFORMED";
+export const RESET_BOARD = "RESET_BOARD";

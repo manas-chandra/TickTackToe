@@ -1,0 +1,116 @@
+* {
+  box-sizing : border-box;
+}
+
+html, body {
+  height : 100%;
+}
+
+@mixin btn-reset() {
+  .btn-reset {
+    padding: 10px 20px;
+    border: none;
+    background: #FFC730;
+    font-size: .9em;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+body {
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  vertical-align  : center;
+  flex-wrap       : wrap;
+  align-content   : center;
+
+  font-family     : 'Open Sans', sans-serif;
+}
+.reset {
+  display: flex;
+  justify-content: flex-end;
+  @include btn-reset();
+}
+
+
+.ticTacToe {
+  display         : flex;
+  justify-content : space-between;
+
+  width   : 400px;
+  height  : 400px;
+  padding : 5px;
+
+  .row {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-between;
+  }
+
+  .column {
+    display : block;
+    width   : 125px;
+    height  : 125px;
+    background  : #78bec5;
+    color       : #fff;
+    font-size   : 4em;
+    font-weight : 100;
+    text-align  : center;
+    padding     : 20px;
+    line-height: 85px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  .player1{
+    background-color: #dc685a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .player2{
+    background-color: #ecaf4f;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #888;
+  background:  linear-gradient(#ac7cfd 0%, #d071dc 47.78%, #ff67b2 100%);
+
+  .winner{
+    color: white;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+
+  width: 50%; /* Could be more or less, depending on screen size */
+  .reset {
+    display: flex;
+    justify-content: center;
+    @include btn-reset()
+  }
+}
