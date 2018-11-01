@@ -2,9 +2,6 @@
   box-sizing : border-box;
 }
 
-html, body {
-  height : 100%;
-}
 
 @mixin btn-reset() {
   .btn-reset {
@@ -37,17 +34,14 @@ body {
 
 
 .ticTacToe {
-  display         : flex;
-  justify-content : space-between;
-
   width   : 400px;
   height  : 400px;
   padding : 5px;
 
   .row {
     display         : flex;
-    flex-direction  : column;
     justify-content : space-between;
+    margin: 10px -5px;
   }
 
   .column {
